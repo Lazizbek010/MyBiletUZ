@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('../fonts/stylesheet.css');
+@import url('./variables.css');
+
+/* ------ GLOBAL ------ */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html {
+      height: 100%;
+}
+
+body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Futura Cyrillic Book';
+      background-color: var(--secondary-clr);
+}
+
+a {
+      text-decoration: none;
+}
+
+main {
+      flex-grow: 1;
+}
+
+.container {
+      max-width: 1248px;
+      margin: 0 auto;
+      padding: 0 10px;
+}
+
+.hidden {
+      display: none !important;
+}
+
+.style1 {
+      font-weight: 700;
+      line-height: 25px;
+      font-size: 1.375rem;
+}
+
+.primary-btn {
+      background: var(--primary-clr);
+      box-shadow: var(--shadow1);
+      padding: 17px 25px;
+      border-radius: var(--bor-rad);
+      color: var(--light-clr);
+      border: none;
+}
+
+.primary-btn:hover {
+      opacity: 0.8;
+      cursor: pointer;
+}
+
+.primary-btn:active {
+      opacity: 0.6;
+}
+
+/* ------ HEADER ----- */
+#header {
+      width: 100%;
+      position: relative;
+      background: var(--primary-clr);
+      background-image: url('../images/menu_blur.png');
+      background-repeat: no-repeat;
+      background-position: top 0px left 50%;
+}
+
+.nav {
+      padding-top: 16px;
+}
+
+.nav__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.logo {
+      width: 177px;
+      height: 97px;
+}
+
+.logo img {
+      width: inherit;
+      height: inherit;
+}
+
+.nav__right {
+      display: flex;
+      align-items: center;
+      gap: 137px;
+}
+
+.nav__list {
+      display: flex;
+      gap: 46px;
+      list-style-type: none;
+}
+
+.nav__list a {
+      font-family: 'Futura Cyrillic Book';
+      font-weight: 400;
+      font-size: 1.375rem;
+      line-height: 1.563rem;
+      color: var(--light-clr);
+      text-decoration: none;
+      position: relative;
+      transition: .3s;
+}
+
+.nav__list a:hover {
+      opacity: 0.8;
+}
+
+.nav__list a::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      border-radius: 25px;
+      bottom: -2px;
+      left: 0;
+      background-color: var(--light-clr);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .3s linear;
+}
+
+.nav__list a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+}
+
+.nav__menu {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+}
+
+.nav__lang {
+      position: relative;
+      cursor: pointer;
+      text-transform: uppercase;
+}
+
+.nav__lang div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+}
+
+.nav__lang .content {
+      pointer-events: none;
+}
+
+.nav__lang-options {
+      min-width: 100%;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 6px);
+      display: flex;
+      flex-direction: column;
+      z-index: 500;
+      border-radius: 8px;
+      background: var(--light-clr);
+}
+
+.nav__lang-options .lang-option-item {
+      padding: 8px;
+      width: 100%;
+      display: block;
+      font-size: 0.625rem;
+      line-height: 10px;
+      color: var(--dark-clr);
+}
+
+.lang-text-info {
+      font-family: 'Futura Cyrillic';
+      font-weight: 700;
+      font-size: 1.375rem;
+      color: var(--light-clr);
+}
+
+
+.nav__lang-options .lang-option-item:hover {
+      background: var(--shape-clr);
+      opacity: 0.8;
+}
+
+.lang-img {
+      width: 26px;
+      height: 24px;
+      border-radius: 50%;
+}
+
+.nav__lang-options .lang-option-item:first-child {
+      border-radius: 8px 8px 0 0;
+}
+
+.nav__lang-options .lang-option-item:last-child {
+      border-radius: 0 0 8px 8px;
+}
+
+.profile {
+      display: flex;
+      align-self: center;
+      gap: 12px;
+}
+
+.profile__title {
+      color: var(--light-clr);
+}
+
+/* ----- MENU ----- */
+.menu {
+      padding: 106px 0 88px;
+      position: relative;
+      z-index: 1;
+}
+
+.menu__title {
+      font-size: 3.125rem;
+      font-weight: 700;
+      line-height: 25px;
+      color: var(--light-clr);
+      margin-bottom: 21px;
+      text-align: center;
+}
+
+.menu__desc {
+      text-align: center;
+      margin-bottom: 36px;
+      color: var(--light-clr);
+}
+
+.menu h3.info {
+      margin-bottom: 16px;
+      color: var(--light-clr);
+      font-weight: 400;
+}
+
+.menu__info {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      justify-content: space-between;
+}
+
+.menu__selection {
+      display: flex;
+      gap: 4px;
+      list-style-type: none;
+      flex-grow: 1;
+}
+
+.menu__selection li {
+      background: var(--secondary-clr);
+      padding: 17px 21px;
+      flex-grow: 1;
+      color: var(--silver-clr);
+      cursor: pointer;
+}
+
+.menu__selection li.active,
+.menu__selection li span {
+      color: var(--text-clr);
+}
+
+.menu__selection li:first-child {
+      border-radius: 15px 0 0 15px;
+}
+
+.menu__selection li:last-child {
+      border-radius: 0 15px 15px 0;
+}
+
+.menu__img {
+      max-width: 1440px;
+      width: 100%;
+      height: 404px;
+      margin-top: 96px;
+}
+
+.menu__img img {
+      width: 100%;
+      height: inherit;
+}
+
+/* ----- BUY TICKETS ----- */
+.buy-tickets {
+      padding: 71px 0 127px;
+}
+
+.but-tickets__title {
+      margin-bottom: 70px;
+      text-align: center;
+      font-size: 2.063rem;
+      line-height: 25px;
+      font-weight: bold;
+      color: var(--text-clr);
+}
+
+.buy-tickets__content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 20px;
+}
+
+.buy-tickets__item {
+      width: 295px;
+      text-align: center;
+      border-radius: 120px;
+      padding: 43px 32px 53px;
+      display: flex;
+      flex-direction: column;
+      background: var(--card-clr);
+      transition: 0.3s linear;
+      gap: 20px;
+      box-shadow: 0 100px 200px 0 rgba(50, 122, 210, 0.1);
+}
+
+.buy-tickets__item:nth-child(odd) {
+      transform: translateY(40px);
+}
+.buy-tickets__item:hover{
+      transform: scale(1.03);
+}
+.buy-tickets__item:nth-child(odd):hover {
+      transform: translateY(40px) scale(1.03);
+}
+.buy-tickets__item-img {
+      width: 101px;
+      height: 101px;
+      background: rgba(49, 62, 247, 0.05);
+      border-radius: 50%;
+      margin: 0 auto;
+      display: grid;
+      place-items: center;
+}
+
+.buy-tickets__item h3 {
+      font-weight: 700;
+      font-size: 1.313rem;
+      line-height: 20px;
+      color: var(--text-clr);
+}
+
+.buy-tickets__item p {
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 20px;
+      color: var(--silver-clr);
+}
+
+/* ----- ABOUT ----- */
+.about {
+      padding: 71px 0 99px;
+      width: 100%;
+      background: url('../images/Map.png'), 
+      linear-gradient(rgb(50, 122, 210), rgb(50, 122, 210));
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1320px 648px, cover;
+}
+
+.about__title {
+      margin-bottom: 60px;
+      text-align: center;
+      color: var(--light-clr);
+      font-weight: 700;
+      line-height: 25px;
+      font-size: 2.063rem;
+}
+
+.about__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.about__left {
+      position: relative;
+      width: 560px;
+      height: 456px;
+}
+
+.about__left-abso1 {
+      width: 198px;
+      height: 283px;
+      top: 0;
+      left: 0;
+      border-radius: 209px;
+}
+
+.about__left-abso1,
+.about__left-abso2 {
+      border: 10px solid var(--light-clr);
+      position: absolute;
+      overflow: hidden;
+}
+
+.about__left-abso1 img,
+.about__left-abso2 img {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+      transition: 0.3s linear;
+
+}
+.about__left-abso1:hover img,
+.about__left-abso2:hover img {
+      transform: scale(1.1);
+}
+.about__left-abso2 {
+      width: 181px;
+      height: 255px;
+      right: 0;
+      bottom: 0;
+      border-radius: 101px;
+}
+
+.about__left-main-img {
+      width: 304px;
+      height: 455px;
+      border-radius: 209px;
+      margin: 0 auto;
+}
+
+.about__left-main-img img {
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+}
+.airplane_ticket{
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      left: 10px;
+      top: 60%;
+}
+
+.about__right{
+      max-width: 505px;
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+      align-items: flex-start;
+}
+.about__right p{
+      font-size: 1.313rem;
+      line-height: 25px;
+      color: var(--desc-clr);
+      font-weight: 400;
+}
+.about__btn{
+      border: 1px solid var(--light-clr);
+      box-shadow: 0 1px 17px 0 rgba(50, 122, 210, 0.25);
+      padding: 16px 36px;
+      background: transparent;
+      color: var(--light-clr);
+      font-size: 1.25rem;
+      border-radius: 40px;
+      transition: 0.3s;
+}
+.about__btn:hover{
+      cursor: pointer;
+      opacity: 0.8;
+}
+.about__btn:active{
+      opacity: 0.6;
+}
+
+/* ----- FOOTER ----- */
+#footer{
+      padding: 20px 0;
+}
+.footer__content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.footer__logo{
+      width: 177px;
+      height: 97px;
+}
+.footer__logo img{
+      width: 100%;
+      height: 100%;
+}
+.footer__list{
+      display: flex;
+      gap: 46px;
+      list-style-type: none;
+}
+.footer__list a{
+      font-weight: 400;
+      color: var(--text-clr2);
+      position: relative;
+      transition: .3s;
+}
+
+.footer__list a:hover {
+      opacity: 0.8;
+}
+
+.footer__list a::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      border-radius: 25px;
+      bottom: -2px;
+      left: 0;
+      background-color: var(--text-clr2);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .3s linear;
+}
+
+.footer__list a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+}
+
+.footer__icons{
+      display: flex;
+      gap: 18px;
+}
+.footer__icon{
+      display: block;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--primary-clr);
+      box-shadow: 0 6px 27px 0 rgba(49, 49, 49, 0.17);
+      transition: 0.3s;
+}
+.footer__icon:hover{
+      cursor: pointer;
+      opacity: 0.8;
+}
+.footer__icon:active{
+      opacity: 0.6;
+}

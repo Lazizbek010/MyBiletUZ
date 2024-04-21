@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Futura Cyrillic Book';
+    src: url('FuturaCyrillicBook.woff2') format('woff2'),
+        url('FuturaCyrillicBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic Demi';
+    src: url('FuturaCyrillic-Demi.woff2') format('woff2'),
+        url('FuturaCyrillic-Demi.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic Extra';
+    src: url('FuturaCyrillic-ExtraBold.woff2') format('woff2'),
+        url('FuturaCyrillic-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    src: url('FuturaCyrillicHeavy.woff2') format('woff2'),
+        url('FuturaCyrillicHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    src: url('FuturaCyrillic-Bold.woff2') format('woff2'),
+        url('FuturaCyrillic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    src: url('FuturaCyrillicLight.woff2') format('woff2'),
+        url('FuturaCyrillicLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Cyrillic';
+    src: url('FuturaCyrillicMedium.woff2') format('woff2'),
+        url('FuturaCyrillicMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

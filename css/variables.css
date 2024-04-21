@@ -1,0 +1,18 @@
+:root{
+      --primary-clr: #327BD2;
+      --light-clr: #fff;
+      --dark-clr: #000;
+      --secondary-clr: #FBFBFB;
+      --card-clr: #FDFDFD;
+      --shadow1: 0 1px 17px 0 #327BD2;
+      --desc-clr: #EBEBEB;
+      --text-clr: #262626;
+      --text-clr2: #747373;
+      --text-clr3: #4D4D4D;
+      --label-clr: #B9B9B9;
+      --silver-clr: #999;
+      --success-clr: #009E23;
+      --danger-clr: #9E0000;
+      --shape-clr: #F5F5F8;
+      --bor-rad: 15px;
+}
