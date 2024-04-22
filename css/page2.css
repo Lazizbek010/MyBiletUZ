@@ -21,8 +21,8 @@
 }
 
 .sidebar {
-      max-width: 373px;
-      width: 100%;
+     flex-grow: 1;
+     min-width: 210px;
       border-radius: 10px;
       background: var(--light-clr);
       padding: 20px 20px 24px 20px;
@@ -117,7 +117,8 @@
 }
 
 .content {
-      flex-grow: 1;
+     max-width: 819px;
+     width: 100%;
 }
 
 .content ul {

@@ -1,0 +1,343 @@
+@media (max-width:1250px) {
+      .buy-tickets__item:nth-child(odd) {
+            transform: translateY(0px);
+      }
+
+      .buy-tickets__item:nth-child(odd):hover {
+            transform: translateY(0px) scale(1.03);
+      }
+
+      .buy-tickets__item {
+            border-radius: 12%;
+      }
+}
+
+@media (max-width:1100px) {
+      .about__content {
+            flex-direction: column;
+            gap: 30px;
+      }
+
+      .about__right {
+            max-width: 100%;
+      }
+
+      .page2-menu {
+            gap: 20px;
+      }
+
+      .content__info-item .right__list {
+            gap: 5px;
+      }
+
+      .content__info-item .right {
+            padding: 5px 7px 0 10px;
+      }
+}
+
+@media (max-width:1024px) {
+      .nav__list {
+            display: none;
+      }
+
+      .bars {
+            display: flex;
+      }
+
+      .nav__menu {
+            gap: 25px;
+      }
+
+      .menu__img {
+            height: auto;
+      }
+
+      .menu__info {
+            flex-direction: column;
+      }
+
+      .menu__selection {
+            flex-wrap: wrap;
+            width: 100%;
+      }
+
+      .menu__selection li:first-child {
+            border-radius: 15px 0 0 0;
+            width: 30%;
+      }
+
+      .menu__selection li:nth-child(2) {
+            border-radius: 0;
+            width: 30%;
+      }
+
+      .menu__selection li:nth-child(3) {
+            border-radius: 0 15px 0 0;
+            width: 30%;
+      }
+
+      .menu__selection li:nth-child(4) {
+            border-radius: 0 0 0 15px;
+            width: 45%;
+      }
+
+      .menu__selection li:last-child {
+            border-radius: 0 0 15px 0;
+            width: 45%;
+      }
+
+      .menu__btn {
+            width: 100%;
+            text-align: center;
+      }
+
+      .page2-menu {
+            flex-direction: column;
+            gap: 40px;
+      }
+
+      .sidebar {
+            width: 100%;
+            overflow-x: auto;
+      }
+
+      .sidebar::-webkit-scrollbar {
+            width: 0;
+      }
+
+      .accordion {
+            flex-direction: row;
+      }
+
+      .content {
+            margin: 0 auto;
+      }
+      .accordion-body{
+            position: relative;
+            z-index: 500;
+      }
+}
+
+@media (max-width:815px) {
+      .right__abso-shape {
+            width: 35px;
+            height: 35px;
+      }
+
+      .content__info-item .right__list-item {
+            font-size: 1rem;
+      }
+
+      .content__info-item .right__list-item div {
+            font-size: 1rem;
+      }
+
+      .price {
+            font-size: 1.375rem;
+            margin-top: 20px;
+            margin-bottom: 30px;
+      }
+
+      .content__info-item-btn {
+            margin-bottom: 20px;
+      }
+
+      .content__info {
+            gap: 35px;
+      }
+}
+
+@media (max-width:700px) {
+      .footer__content {
+            flex-direction: column;
+            gap: 25px;
+      }
+
+      .footer__list {
+            order: 3;
+      }
+
+      .page2-menu {
+            padding: 45px 0 80px;
+      }
+
+      .content__selection-btn {
+            min-width: 150px;
+            padding: 10px;
+            font-size: 0.875rem;
+            font-weight: 400;
+            transform: translateY(-15px);
+      }
+
+      .content__info-item .left {
+            text-align: start;
+      }
+
+      .price {
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 30px;
+      }
+
+      .content__info-item-btn {
+            padding: 10px 16px;
+            font-size: 0.875rem;
+      }
+
+      .content__info-item .left {
+            width: auto;
+      }
+}
+
+@media (max-width:650px) {
+      .profile .profile__title {
+            display: none;
+      }
+
+      .nav__menu {
+            gap: 20px;
+      }
+
+      .lang-text-info {
+            font-size: 1rem;
+      }
+
+      .lang-img {
+            width: 20px;
+            height: 18px;
+      }
+
+      .buy-tickets__item {
+            padding: 30px 15px 35px;
+      }
+
+      .buy-tickets__item-img {
+            width: 75px;
+            height: 75px;
+      }
+
+      .buy-tickets__item {
+            border-radius: 10%;
+      }
+
+      .but-tickets__title {
+            font-size: 1.563rem;
+      }
+
+      .about__left {
+            width: 100%;
+      }
+
+      .menu {
+            padding: 75px 0 55px;
+      }
+
+      .menu__title {
+            font-size: 2.5rem;
+            line-height: 35px;
+      }
+
+      .menu__desc {
+            font-size: 1.25rem;
+      }
+
+      .content__info-item {
+            position: relative;
+      }
+
+      .content__selection-btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+      }
+
+      .content__info-item {
+            flex-direction: column;
+      }
+
+      .content__info-item .left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0 20px;
+      }
+
+      .price {
+            margin: 0;
+      }
+
+      .content__info-item-btn {
+            margin: 0;
+      }
+
+}
+
+@media (max-width:500px) {
+      .menu__selection li:first-child {
+            border-radius: 15px 0 0 0;
+            width: 45%;
+      }
+
+      .menu__selection li:nth-child(2) {
+            width: 45%;
+            border-radius: 0 15px 0 0;
+      }
+
+      .menu__selection li:nth-child(3) {
+            width: 45%;
+            border-radius: 0;
+      }
+
+      .menu__selection li:nth-child(4) {
+            width: 45%;
+            border-radius: 0;
+      }
+
+      .menu__selection li:last-child {
+            border-radius: 0 0 15px 15px;
+      }
+
+      .content__info-item .right__list {
+            width: 100%;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+@media (max-width:450px) {
+      .logo {
+            width: 140px;
+            height: 70px;
+      }
+
+      .about__left {
+            height: 380px;
+      }
+
+      .about__left-main-img {
+            width: 70%;
+      }
+
+      .about__left-main-img img {
+            width: 100%;
+      }
+
+      .about__left-abso1,
+      .about__left-abso2 {
+            width: 38%;
+            height: auto;
+      }
+
+      .airplane_ticket {
+            width: 45px;
+            height: 45px;
+      }
+
+      .menu__img {
+            margin-top: 60px;
+      }
+
+      .content__info-item .right__list {
+            grid-template-columns: repeat(1, 1fr);
+      }
+}
